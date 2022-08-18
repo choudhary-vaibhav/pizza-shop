@@ -9,7 +9,7 @@ export const nativeOperations = {
         navigator.geolocation.getCurrentPosition((position) =>{
             const pos = {
                 'lat' : position.coords.latitude,
-                'lgn' : position.coords.longitude
+                'lng' : position.coords.longitude
             };
             success(pos);
 
