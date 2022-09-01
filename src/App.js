@@ -7,6 +7,9 @@ import { Header } from './shared/widgets/Header';
 import { MediaCard } from './shared/widgets/Card';
 import { Register } from './modules/user/registration';
 import { Login } from './modules/user/login';
+import { Update } from './modules/user/update';
+import { Delete } from './modules/user/delete';
+import { ChangePassword } from './modules/user/change_password';
 
 function App() {
   return <>
@@ -15,9 +18,11 @@ function App() {
     {/* <Header/>
     <Gps/> */}
     {/* <MediaCard/>  */}
-    {/* <Login/> */}
-    <Register/>
-
+    {/* <Login/><br/>
+    <Register/> */}
+    {/* <Update/> */}
+    {/* <Delete/> */}
+    <ChangePassword/>
   </>
     
 

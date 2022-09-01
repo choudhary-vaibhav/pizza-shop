@@ -9,7 +9,8 @@ export const Register = ()=>{
     const userid = useRef('');
     const pwd = useRef('');
     const phoneno = useRef('');
-    const doLogin = async ()=>{
+
+    const doRegister = async ()=>{
         const uid = userid.current.value;
         const password= pwd.current.value;
         const pno = phoneno.current.value;
@@ -25,16 +26,21 @@ export const Register = ()=>{
         }
     }
     return (
-     <Container maxWidth="sm">
+        <Box sx={{ flexGrow: 1, }}>
+            <Container maxWidth="sm">
         <h1>Register</h1>
         <h4>{msg}</h4>
      <Box sx={{  height: '100vh' }} >
      <TextField inputRef = {userid} id="outlined-basic" label="Userid" variant="outlined" />
+     <br/>
      <TextField inputRef = {pwd} id="outlined-basic" type="password" label="Password" variant="outlined" />
+     <br/>
      <TextField inputRef = {phoneno} id="outlined-basic" type="text" label="PhoneNo" variant="outlined" />
      <br/> 
-     <Button onClick = {doLogin} variant="contained">Register</Button>
+     <Button onClick = {doRegister} variant="contained">Register</Button>
         </Box>
      </Container>
+        </Box>
+     
     )
 }
